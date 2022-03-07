@@ -52,6 +52,7 @@ ggplot(minintmean,aes(x=as.POSIXct(time2,tz="GMT"),y=intmean)) +
     geom_line() + 
     xlab("Time interval") + 
     ylab("Average steps per time interval") + 
+    labs(title="Average steps per time interval") +
     scale_x_datetime(date_breaks="1 hour",labels= date_format("%H:%M"),timezone="UTC") + 
     theme(axis.text.x=element_text(angle=90,vjust=0.5,hjust=0.5,size=7))
 ```
